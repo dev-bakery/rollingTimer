@@ -1,0 +1,13 @@
+#clock{display:flex;overflow: hidden;height:40px;justify-content: center;}
+#clock .text{display: inline-block;width:25px;text-align: center;}
+#clock .text__number{display: inline-block;font-size:40px;height:40px;}
+
+.move{animation: move ease 0.6s infinite;}
+
+@keyframes move{
+  from{
+    transform: translateY(0);
+  }to{
+    transform: translateY(-40px);
+  }
+}
